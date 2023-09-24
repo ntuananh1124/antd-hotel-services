@@ -1,0 +1,14 @@
+.mt-20 {
+    margin-top: 20px;
+}
+
+.slider {
+
+    &__item {
+        background-color: orange;
+        font-size: 35px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}

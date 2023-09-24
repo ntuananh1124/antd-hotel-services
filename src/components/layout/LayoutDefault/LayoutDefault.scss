@@ -1,0 +1,68 @@
+$color: #ddd;
+
+.header {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid $color;
+
+    &__logo {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    &__img {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid $color;
+        transition: all 0.2s;
+
+        img {
+            width: 100px;
+            object-fit: cover;
+            transition: all 0.2s;
+        }
+
+        &--collapsed {
+            width: 80px;
+            height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid $color;
+            transition: all 0.2s;
+            
+            img {
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.2s;
+            }
+        }
+    }
+
+    &__nav {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+
+        &-left {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            column-gap: 20px;
+        }
+    }
+
+    &__collapse {
+        cursor: pointer;
+    }
+}
+
+.content {
+    padding: 20px;
+}
+

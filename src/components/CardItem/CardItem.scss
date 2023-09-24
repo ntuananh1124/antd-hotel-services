@@ -1,0 +1,12 @@
+$color: #ddd;
+
+.item {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid $color;
+
+    &__title {
+        text-transform: capitalize;
+    }
+}
